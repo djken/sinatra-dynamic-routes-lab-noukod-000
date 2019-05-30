@@ -1,5 +1,6 @@
-<%=
-@num1, @num2, @operation = params[:number1].to_i, params[:number2].to_i, params[:operation]
+<%= @num1 = params[:number1].to_i
+    @num2 = params[:number2].to_i 
+    @operation = params[:operation]
 case @operation
 when 'add'
   "#{@num1 + @num2}"
